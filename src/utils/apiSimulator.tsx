@@ -1,0 +1,1 @@
+import * as _DATA from './_DATA.json'
