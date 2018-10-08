@@ -1,9 +1,9 @@
 import { FETCH_ATHLETES, fetchAthletes } from '../../../reduxCore/actions/athleteActions'
 
-/**
- * test if action is generated.
- */
 describe('actions', () => {
+  /**
+   * test if action is generated.
+   */
   it('should create an action to fetch all athletes', () => {
     const MOCK_ATHLETES =[
         {

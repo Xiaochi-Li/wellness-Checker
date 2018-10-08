@@ -8,7 +8,7 @@ export default function athleteReducer(state = INITIAL_STATE ,action:any){
     case FETCH_ATHLETES:
       return {
         ...state,
-        ...action.athletes
+        athletes:action.athletes
       };
     default:
       return {...state};
