@@ -1,9 +1,11 @@
 // import {AssociatedAtheists} from "../../utils/DataShap";
-import {FETCH_IMAGES} from "../actions/athleteActions";
+import {FETCH_ATHLETES} from "../actions/athleteActions";
 
-export default function athleteReducer(state = {athletes:[]},action:any){
+const INITIAL_STATE = {athletes:[]};
+
+export default function athleteReducer(state = INITIAL_STATE ,action:any){
   switch (action.type) {
-    case FETCH_IMAGES:
+    case FETCH_ATHLETES:
       return {
         ...state,
         ...action.athletes

@@ -6,15 +6,15 @@ import {AssociatedAtheists} from "../../utils/DataShap";
 /**
  * action type
  */
-export const FETCH_IMAGES = 'FETCH_IMAGES';
+export const FETCH_ATHLETES = 'FETCH_ATHLETES';
 
 /**
  * action creator for FETCH_IMAGES
  * @param athletes
  */
-export const fetchAthletes = (athletes: AssociatedAtheists) => {
+export const fetchAthletes = (athletes:AssociatedAtheists[]) => {
   return {
-    type: FETCH_IMAGES,
+    type: FETCH_ATHLETES,
     athletes
   }
 };
@@ -24,7 +24,7 @@ export const fetchAthletes = (athletes: AssociatedAtheists) => {
  * @param dispatch
  */
 export const handleFetchAthletes = (dispatch: Dispatch) => {
-  return getAthletes().then((athletes: AssociatedAtheists) => {
+  return getAthletes().then((athletes: AssociatedAtheists[]) => {
       dispatch(fetchAthletes(athletes));
     }
   )
