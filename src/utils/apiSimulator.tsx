@@ -1,5 +1,5 @@
 import * as _ATHLETE_DATA from './_DATA.json';
-import {AssociatedAtheists} from "./DataShap";
+import {AssociatedAtheists} from "./DataShape";
 
 /**
  * Generate a random ID.

@@ -16,9 +16,8 @@
       true,
       "never-prefix"
     ],
-    "no-console": [
-      false
-    ],
-    "object-literal-sort-keys": false
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "no-empty-interface": false
   }
 }

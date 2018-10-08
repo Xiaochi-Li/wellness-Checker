@@ -1,7 +1,7 @@
 import {Dispatch} from "redux";
 
 import {getAthletes} from "../../utils/apiSimulator";
-import {AssociatedAtheists} from "../../utils/DataShap";
+import {AssociatedAtheists} from "../../utils/DataShape";
 
 /**
  * action type

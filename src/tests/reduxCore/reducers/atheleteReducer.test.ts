@@ -1,5 +1,5 @@
-import athleteReducer from "../../../reduxCore/reducers/athleteReducer";
 import {FETCH_ATHLETES} from "../../../reduxCore/actions/athleteActions";
+import athleteReducer from "../../../reduxCore/reducers/athleteReducer";
 
 
 describe('athleteReducer', () =>{
