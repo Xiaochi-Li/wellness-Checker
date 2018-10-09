@@ -27,7 +27,7 @@ const AthleteTableFooter: React.SFC<AthleteTableFooterInterface> = (props) => {
 };
 
 /**
- * map basic athletes data from state to props.
+ * map basic athletes data from state to props
  * @param state
  */
 const mapStateToProps = (state: any) => {
