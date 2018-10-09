@@ -9,6 +9,9 @@ interface AthleteTableFooterInterface {
   averageSleepQuality: number;
 }
 
+/**
+ * the athlete table footer component
+ */
 const AthleteTableFooter: React.SFC<AthleteTableFooterInterface> = (props) => {
   return (
     <StyledAthleteTableRow>

@@ -25,6 +25,21 @@ export const StyledAthleteTableCell = styled.th`
   color: #000000a6;
 `;
 
+export const StyledAthleteTableCellRed = styled(StyledAthleteTableCell)`
+  background-color: #dc143c;
+  color: white;
+`;
+
+export const StyledAthleteTableCellOrange = styled(StyledAthleteTableCell)`
+  background-color: #ff7f50;
+  color: white;
+`;
+
+export const StyledAthleteTableCellGreen = styled(StyledAthleteTableCell)`
+  background-color: #98fb98;
+  color: white;
+`;
+
 export const StyledAthleteTableHeaderCell = styled(StyledAthleteTableCell)`
   color: white;
 `;

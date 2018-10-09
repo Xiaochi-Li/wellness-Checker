@@ -15,8 +15,11 @@ interface AthleteTableInterface {
  * the athlete table component
  */
 const AthleteTable: React.SFC<AthleteTableInterface> = (props) => {
+
   /**
-   *
+   * a helper function to render a list of Table Row components,
+   * doing so can make TSX code more readable, and make maintaining
+   * the render function easier.
    */
   const renderTableRows = () => {
     return props.athletes.map((athlete: AssociatedAtheists) => {
@@ -27,7 +30,7 @@ const AthleteTable: React.SFC<AthleteTableInterface> = (props) => {
         sleepQuality={athlete.sleepQuality}
       />
     })
-  }
+  };
 
   return (
     <StyledAthleteTable>
