@@ -28,6 +28,9 @@ run `yarn build` to build the product.
 
 ### Packages
 1. tslint and editerconfig for syntax and coding style consistency.
+2. jest for testing.
+3. antd and styled-components for styling UI.
+4. redux-devtools-extension for monitoring redux core.
 
 ### Testing
 run `yarn test` to run all test case in watch mode.
