@@ -1,8 +1,8 @@
 import * as React from "react";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 
-import {Icon, Menu} from 'antd';
-import {handleFetchAthletes} from "../reduxCore/actions/athleteActions";
+import { Icon, Menu } from 'antd';
+import { handleFetchAthletes } from "../reduxCore/actions/athleteActions";
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -25,9 +25,8 @@ const SideMenu: React.SFC<SideMenuInterface> = (props) => {
 
   return (
     <Menu
-      style={{width: 256}}
-      defaultSelectedKeys={['1']}
-      defaultOpenKeys={['sub1']}
+      defaultSelectedKeys={[ '1' ]}
+      defaultOpenKeys={[ 'sub1' ]}
       mode="inline"
     >
       <SubMenu key="sub1" title={<span><Icon type="mail"/><span>Managing Athletes</span></span>}>

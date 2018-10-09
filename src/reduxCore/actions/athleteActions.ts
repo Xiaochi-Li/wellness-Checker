@@ -1,7 +1,7 @@
-import {Dispatch} from "redux";
+import { Dispatch } from "redux";
 
-import {getAthletes} from "../../utils/apiSimulator";
-import {AssociatedAtheists} from "../../utils/DataShape";
+import { getAthletes } from "../../utils/apiSimulator";
+import { AssociatedAtheists } from "../../utils/DataShape";
 
 /**
  * action type
@@ -12,10 +12,10 @@ export const FETCH_ATHLETES = 'FETCH_ATHLETES';
  * action creator for FETCH_IMAGES
  * @param athletes
  */
-export const fetchAthletes = (athletes:AssociatedAtheists[]) => {
+export const fetchAthletes = (athletes: AssociatedAtheists[]) => {
   return {
     type: FETCH_ATHLETES,
-    athletes
+    ...athletes
   }
 };
 

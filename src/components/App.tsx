@@ -1,8 +1,8 @@
-import {Layout} from 'antd';
+import { Layout } from 'antd';
 import * as React from 'react';
 
 import AthleteTable from "./AthleteTable/AthleteTable";
-import {PageHeader} from "./PageHeader";
+import { PageHeader } from "./PageHeader";
 import SideMenu from "./SideMenu";
 
 const {Content, Sider} = Layout;

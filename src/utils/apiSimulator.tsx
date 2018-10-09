@@ -1,5 +1,5 @@
 import * as _ATHLETE_DATA from './_DATA.json';
-import {AssociatedAtheists} from "./DataShape";
+import { AssociatedAtheists } from "./DataShape";
 
 /**
  * Generate a random ID.
@@ -18,9 +18,9 @@ const associateStaticsToAthlete = (athleteData: any) => {
   for (let i = 0; i < athleteData.athlete.length; i++) {
     associatesAthletes.push({
       ID: generateUID(),
-      muscleSoreness: Number(athleteData.muscleSoreness[i]),
-      name: athleteData.athlete[i],
-      sleepQuality: Number(athleteData.sleepQuality[i])
+      muscleSoreness: Number(athleteData.muscleSoreness[ i ]),
+      name: athleteData.athlete[ i ],
+      sleepQuality: Number(athleteData.sleepQuality[ i ])
     })
   }
   return associatesAthletes;

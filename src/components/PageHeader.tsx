@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Layout, Menu} from 'antd';
+import { Layout, Menu } from 'antd';
 
 const {Header} = Layout;
 
@@ -16,7 +16,7 @@ export const PageHeader: React.SFC<PageHeaderInterface> = (props) => {
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['1']}
+        defaultSelectedKeys={[ '1' ]}
         style={{lineHeight: '64px'}}
       >
         <Menu.Item key="1">Wellness Report</Menu.Item>

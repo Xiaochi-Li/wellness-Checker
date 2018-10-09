@@ -1,38 +1,42 @@
-import {Table} from "antd";
 import * as React from 'react';
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 
-import {AssociatedAtheists} from "../../utils/DataShape";
+import { AssociatedAtheists } from "../../utils/DataShape";
+import AthleteTableFooter from "./AthleteTableFooter";
+import { AthleteTableHeader } from "./AthleteTableHeader";
+import { AthleteTableRow } from "./AthleteTableRow";
+import { StyledAthleteTable } from "./styles";
 
 interface AthleteTableInterface {
   athletes: AssociatedAtheists[];
 }
 
 /**
- * Page Header bar
+ * the athlete table component
  */
 const AthleteTable: React.SFC<AthleteTableInterface> = (props) => {
-  console.log(props.athletes);
-
-  const columns = [{
-    title: 'Name',
-    dataIndex: 'name'
-  }, {
-    title: 'Muscle Soreness',
-    dataIndex: 'muscleSoreness',
-  }, {
-    title: 'Sleep Quality',
-    dataIndex: 'sleepQuality',
-  }];
-
-  const data = props.athletes;
+  /**
+   *
+   */
+  const renderTableRows = () => {
+    return props.athletes.map((athlete: AssociatedAtheists) => {
+      return <AthleteTableRow
+        key={athlete.ID}
+        name={athlete.name}
+        muscleSoreness={athlete.muscleSoreness}
+        sleepQuality={athlete.sleepQuality}
+      />
+    })
+  }
 
   return (
-    <Table
-      columns={columns}
-      dataSource={data}
-      bordered={true}
-    />
+    <StyledAthleteTable>
+      <tbody>
+      <AthleteTableHeader/>
+      {renderTableRows()}
+      <AthleteTableFooter/>
+      </tbody>
+    </StyledAthleteTable>
   )
 };
 
@@ -41,7 +45,9 @@ const AthleteTable: React.SFC<AthleteTableInterface> = (props) => {
  * @param state
  */
 const mapStateToProps = (state: any) => {
-  return {athletes:state.athleteReducer.athletes};
+  return {
+    athletes: state.athleteReducer.athletes
+  };
 };
 
 export default connect(mapStateToProps)(AthleteTable);
