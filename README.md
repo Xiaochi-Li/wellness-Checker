@@ -1,6 +1,3 @@
-### What is Wellness Checker
-Wellness checker is an single-page web application developed for
-
 ### Notice
 This project is a little big over-engendered for showcase the skills and experiences
  the developer have.
